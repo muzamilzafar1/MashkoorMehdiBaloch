@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body style="background-color: #3c3d3d;">
+  <style>
+    .main-content {
+      flex-grow: 1;
+      padding: 30px;
+    }
+
+    .portfolio-detail-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .swiper {
+      width: 500px;
+      height: auto;
+      display: none;
+    }
+
+    .swiper.active {
+      display: block;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      border-radius: 10px;
+      height: 400px;
+    }
+
+    .swiper-pagination {
+      margin-top: 10px;
+    }
+
+    .portfolio-info {
+      max-width: 400px;
+      background: rgb(39, 38, 38);
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    .portfolio-info h3 {
+      margin-bottom: 15px;
+    }
+
+    .portfolio-info ul {
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    .portfolio-info li {
+      margin-bottom: 8px;
+    }
+    #footer {
+  padding: 24px 20px 10px 20px;
+  color: #444444;
+  font-size: 14px;
+      background: rgb(39, 38, 38);
+  text-align: center;
+  margin-top: 40px;
+}
+
+#footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#footer .copyright {
+  margin-bottom: 5px;
+}
+
+#footer .copyright strong {
+  font-weight: 700;
+}
+
+#footer .credits {
+  font-size: 13px;
+}
+
+#footer .credits a {
+  color: #149ddd; 
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+#footer .credits a:hover {
+  color: #37b3f5;
+}
+  </style>
+
+  <!-- Toggle Button for Mobile -->
+  <div class="toggle-btn" onclick="toggleSidebar()">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <div class="profile">
+      <img src="Untitled design.png" alt="Profile" />
+      <h2>Mashkoor Baloch</h2>
+    </div>
+
+    <div class="social-icons">
+      <a href="https://www.facebook.com/share/15ZZEFmH6x/"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/mashkoor_baloch?igsh=MXBvdXN1NzRqaDIxOQ=="><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/mashkoor-mehdi-baloch-179359375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fab fa-skype"></i></a>
+      <a href="https://www.linkedin.com/in/mashkoor-mehdi-baloch-179359375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+
+  <ul class="nav-links">
+  <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+  <li><a href="index.html#about"><i class="fas fa-user"></i> About</a></li>
+  <li><a href="index.html#skills"><i class="fas fa-user"></i> Skills</a></li>
+  <li><a href="index.html#resume"><i class="fas fa-file-alt"></i> Resume</a></li>
+  <li><a href="index.html#myportfolio"><i class="fas fa-image"></i> Portfolio</a></li>
+  <li><a href="index.html#service"><i class="fas fa-server"></i> Services</a></li>
+  <li><a href="index.html#contact"><i class="fas fa-phone"></i> Contact</a></li>
+</ul>
+
+  </div>
+
+  <div class="main-content">
+    <div class="portfolio-detail-wrapper">
+
+      <!-- Swiper Sliders for all 4 rows -->
+      <div class="swiper mySwiper row-1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="9.jpg" alt="Project 1"></div>
+          <div class="swiper-slide"><img src="10.jpg" alt="Project 2"></div>
+          <div class="swiper-slide"><img src="11.jpg" alt="Project 3"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+
+      <!-- Project Info -->
+      <div class="portfolio-info">
+        <h3>Project Information</h3>
+        <ul>
+          <li><strong>Category:</strong>Graphic Design</li>
+          <li><strong>Client:</strong>Freelancer</li>
+          <li><strong>Project date:</strong> 
+            15 Oct, 2025</li>
+        </ul>
+        <p>
+         
+Mypassion lies in creative problemsolving and innovation. I am deeply
+driven by challenges that allow me
+to think outside the box, whether in
+technology, business, or personal
+projects. I’m also passionate about
+sustainability and finding ways to
+integrate eco-friendly practices into
+everyday life. These interests inspire
+me to continuously learn, grow, and
+contribute in meaningful ways.</p>
+      </div>
+    </div>
+  </div>
+          <div class="main-content">
+
+    <footer id="footer">
+            <div class="copyright">
+                © Copyright <strong><span>iPortfolio</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                Designed by <a href="https://muzamilzafar1.github.io/MYPORTFOLIO/">MzByteCraft</a>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    // Toggle sidebar
+    function toggleSidebar() {
+      document.getElementById('sidebar').classList.toggle('active');
+    }
+
+    const params = new URLSearchParams(window.location.search);
+    const row = params.get("row") || "1";
+
+    document.querySelectorAll('.swiper').forEach(swiper => {
+      swiper.classList.remove('active');
+    });
+
+    const activeSlider = document.querySelector(`.row-${row}`);
+    if (activeSlider) {
+      activeSlider.classList.add("active");
+    }
+
+    document.querySelectorAll(".swiper").forEach(swiperEl => {
+      new Swiper(swiperEl, {
+        navigation: {
+          nextEl: swiperEl.querySelector(".swiper-button-next"),
+          prevEl: swiperEl.querySelector(".swiper-button-prev")
+        },
+        pagination: {
+          el: swiperEl.querySelector(".swiper-pagination"),
+          clickable: true,
+        },
+      });
+    });
+  </script>
+</body>
+</html>
